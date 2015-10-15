@@ -1,6 +1,5 @@
 body {
   font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
 }
 
 #content {
@@ -12,20 +11,32 @@ body {
 #title {
   color: #143153;
   font-size: 36px;
+  font-weight: normal;
 }
 
 .btn {
-  position: absolute;
-  right: 0;
-  top: 0;
   padding: 10px 30px;
   color: #FFFFFF;
   background-color: #4B688B;
+  font-size: 16px;
   text-decoration: none;
+  border: none;
 }
 
 .btn:hover {
   background-color: #143153;
+}
+
+#new-recipe-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+input {
+  font-size: 18px;
+  padding: 5px 10px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 500px) {
