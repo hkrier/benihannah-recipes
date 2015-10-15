@@ -79,16 +79,16 @@ $app->post('/create', function(Request $request) use($app) {
   $sql = "INSERT INTO recipes (url, title, image_url, ingredients, directions, date, rating_ben, rating_hannah)
             VALUES (:url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)";
 
-  $variables = [
-    ':url' => $request->get('url'),
-    ':title' => $request->get('title'),
-    ':image_url' => $request->get('image_url'),
-    ':ingredients' => $request->get('ingredients'),
-    ':directions' => $request->get('directions'),
-    ':date' => $request->get('date'),
-    ':rating_ben' => $request->get('rating_ben'),
-    ':rating_hannah' => $request->get('rating_hannah'),
-  ];
+    $variables = [
+        ':url' => $request->get('url'),
+        ':title' => $request->get('title'),
+        ':image_url' => $request->get('image_url'),
+        ':ingredients' => $request->get('ingredients'),
+        ':directions' => $request->get('directions'),
+        ':date' => $request->get('date'),
+        ':rating_ben' => $request->get('rating_ben'),
+        ':rating_hannah' => $request->get('rating_hannah'),
+    ];
 
   $conn = $app['pdo']->prepare($sql);
   $conn->execute($variables);
