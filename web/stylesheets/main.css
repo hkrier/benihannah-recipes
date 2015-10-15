@@ -1,6 +1,7 @@
 #content {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 
 #title {
@@ -11,12 +12,18 @@
 }
 
 #new-recipe-btn {
-  float: right;
-  padding: 8px 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 30px;
   color: #FFFFFF;
   background-color: #4B688B;
   text-decoration: none;
   font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#new-recipe-btn:hover {
+  background-color: #051C38;
 }
 
 @media only screen and (max-width: 500px) {
