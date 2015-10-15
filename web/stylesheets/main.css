@@ -48,6 +48,11 @@ a.title:hover {
   font-size: 14px;
 }
 
+.fine-print {
+  color: #748BA7;
+  font-size: 10px;
+}
+
 .btn {
   width: auto;
   padding: 13px 35px;
