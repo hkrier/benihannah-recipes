@@ -17,15 +17,14 @@
         <td><a href="/view/{{ recipe.id }}">{{ recipe.title }}</a></td>
         <td>{{ recipe.date }}</td>
         <td>
-          {% for i in 1..5 %}
-            {% set fill_ratio = recipe.rating_avg - i %}
-            <span class="rating{% if fill_ratio > 1 %} filled"{% elseif fill_ratio > 0 %}" style="width: {{ fill_ratio }}%"{% else %} empty"{% endif %}></span>
-          {% endfor %}
+          <div class="rating-background">
+            <div class="rating" style="width: {{ recipe.rating_avg / 5 * 100 }}%"></div>
+            <img src="/images/paw_overlay">
+          </div>
         </td>
       </tr>
     {% endfor %}
 
   </table>
 
-  <div class="fine-print">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
 {% endblock %}
