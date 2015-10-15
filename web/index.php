@@ -35,7 +35,7 @@ $app->get('/new', function() use($app) {
   return $app['twig']->render('new.twig');
 });
 
-$app->get('/db/', function() use($app) {
+$app->get('/save', function() use($app) {
   $st = $app['pdo']->prepare('SELECT name FROM test_table');
   $st->execute();
 
@@ -45,9 +45,7 @@ $app->get('/db/', function() use($app) {
     $names[] = $row;
   }
 
-  return $app['twig']->render('database.twig', array(
-    'names' => $names
-  ));
+  return $app->redirect('/');
 });
 
 $app->run();
