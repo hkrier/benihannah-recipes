@@ -18,6 +18,9 @@
         <input type="text" name="date" placeholder="Date Eaten" value="{{ recipe.date | default('') }}" />
         <input type="text" name="rating_ben" placeholder="Ben's Rating" value="{{ recipe.rating_ben | default('') }}" />
         <input type="text" name="rating_hannah" placeholder="Hannah's Rating" value="{{ recipe.rating_hannah | default('') }}"  />
+        {% if recipe %}
+            <a class="btn" href="/delete-landing/{{ recipe.id }}">Delete</a>
+        {% endif %}
         <input class="btn" type="submit" value="Save" />
     </form>
 {% endblock %}

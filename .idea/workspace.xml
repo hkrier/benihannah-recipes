@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d60b24-8da8-4ba6-8794-276dea730509" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/views/delete.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/form.twig" afterPath="$PROJECT_DIR$/web/views/form.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
     </list>
     <ignored path="recipes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,19 +38,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.0">
-              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.6721311">
+              <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
               <folding>
-                <marker date="1444937614000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444937614000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444937614000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444937614000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
-                <marker date="1444937614000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
-                <marker date="1444937614000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
+                <marker date="1444939003000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444939003000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444939003000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444939003000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
+                <marker date="1444939003000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
+                <marker date="1444939003000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
+                <marker date="1444939003000" expanded="true" signature="3673:3699" placeholder="SELECT * FRO..recipes..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/views/delete.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,8 +69,8 @@
       <file leaf-file-name="view.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/view.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -93,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/form.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22900763">
-              <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
+            <state vertical-scroll-proportion="-3.625">
+              <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -106,8 +119,8 @@
       <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/index.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8235292">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state vertical-scroll-proportion="-1.1764706">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -140,8 +153,9 @@
         <option value="$PROJECT_DIR$/web/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/web/views/view.twig" />
         <option value="$PROJECT_DIR$/web/views/index.twig" />
-        <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/views/form.twig" />
+        <option value="$PROJECT_DIR$/web/views/delete.twig" />
+        <option value="$PROJECT_DIR$/web/index.php" />
       </list>
     </option>
   </component>
@@ -385,22 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5294118">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/recipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/herrera-io/silex-pdo/src/tests/Herrera/Pdo/Test/Pdo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0">
@@ -435,42 +433,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/scripts/recipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/form.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.625">
+          <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5294118">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8235292">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state vertical-scroll-proportion="-1.1764706">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/view.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/delete.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.0">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.6721311">
+          <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
           <folding>
-            <marker date="1444937614000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444937614000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444937614000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444937614000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
-            <marker date="1444937614000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
-            <marker date="1444937614000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
+            <marker date="1444939003000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444939003000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444939003000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444939003000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
+            <marker date="1444939003000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
+            <marker date="1444939003000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
+            <marker date="1444939003000" expanded="true" signature="3673:3699" placeholder="SELECT * FRO..recipes..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/form.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22900763">
-          <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>

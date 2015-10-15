@@ -117,4 +117,18 @@ $app->post('/update', function(Request $request) use($app) {
   return $app->redirect('/');
 });
 
+$app->get('/delete-landing/{id}', function($id) use ($app) {
+  return $app['twig']->render('delete.twig', [
+      'id' => $id,
+  ]);
+});
+
+$app->get('/delete/{id}', function($id) use ($app) {
+    $sql = "DELTET FROM recipes WHERE id = ?";
+    $conn = $app['pdo']->prepare($sql);
+    $conn->execute([$id]);
+
+    return $app->redirect('/');
+});
+
 $app->run();
