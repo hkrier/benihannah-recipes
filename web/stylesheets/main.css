@@ -43,6 +43,11 @@ a.title:hover {
   font-weight: 600;
 }
 
+.meta-data {
+  color: #748BA7;
+  font-size: 14px;
+}
+
 .btn {
   width: auto;
   padding: 13px 35px;

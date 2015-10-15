@@ -57,8 +57,20 @@ $app->get('/view/{id}', function($id) use ($app) {
   ]);
 });
 
+$app->get('/edit/{id}', function($id) use ($app) {
+  $sql = "SELECT * FROM recipes WHERE id = ?";
+  $conn = $app['pdo']->prepare($sql);
+  $conn->execute([$id]);
+
+  $recipe = $conn->fetch(PDO::FETCH_ASSOC);
+
+  return $app['twig']->render('form.twig', [
+      'recipe' => $recipe,
+  ]);
+});
+
 $app->get('/new', function() use($app) {
-  return $app['twig']->render('new.twig');
+  return $app['twig']->render('form.twig');
 });
 
 $app->post('/save', function(Request $request) use($app) {
