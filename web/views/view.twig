@@ -6,6 +6,10 @@
     </a>
     <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
 
+    <div class="meta-data">Eaten on {{ recipe.date }}</div>
+    <span class="meta-data">Hannah's Rating: {{ recipe.rating_hannah }} &nbsp; &bull; &nbsp;</span>
+    <span class="meta-data">Ben's Rating: {{ recipe.rating_ben }}</span>
+
     <img src="{{ recipe.image_url }}" />
 
     <h3>Ingredients</h3>
@@ -17,9 +21,5 @@
     <div class="directions">
         {{ recipe.directions }}
     </div>
-
-    <h5>Eaten on {{ recipe.date }}</h5>
-    <h5>Hannah's Rating: {{ recipe.rating_hannah }}</h5>
-    <h5>Ben's Rating: {{ recipe.rating_ben }}</h5>
 
 {% endblock %}
