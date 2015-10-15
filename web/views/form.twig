@@ -1,8 +1,12 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1 class="title">{% if recipe.title %} Edit {{ recipe.title }}{% else %}New Recipe{% endif %}</h1>
-    <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
+    <h1 class="title">
+        {% if recipe %} Edit {{ recipe.title }}{% else %}New Recipe{% endif %}
+    </h1>
+    <a class="btn upper-right" href="/{% if recipe %}view/{{ recipe.id }}{% endif %}">
+        &larr; &nbsp; Back to {% if recipe %}Recipe{% else %}List{% endif %}
+    </a>
 
     <form action="/{% if recipe %}update{% else %}create{% endif %}" method="post">
         <input type="hidden" name="id" value="{{ recipe.id | default('') }}" />
