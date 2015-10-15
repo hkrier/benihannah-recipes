@@ -30,7 +30,19 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 // Our web handlers
 
 $app->get('/', function() use($app) {
-  return $app['twig']->render('index.twig');
+  $sql = "SELECT * FROM recipes";
+  $conn = $app['pdo']->prepare($sql);
+  $conn->execute();
+
+  $recipes = [];
+  while ($row = $conn->fetch(PDO::FETCH_ASSOC)) {
+    $row['rating_avg'] = round(($row['rating_ben'] + $row['rating_hannah']) / 2, 1);
+    $recipes[] = $row;
+  }
+
+  return $app['twig']->render('index.twig', [
+    'recipes' => $recipes,
+  ]);
 });
 
 $app->get('/new', function() use($app) {

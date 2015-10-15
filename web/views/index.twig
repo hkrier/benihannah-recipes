@@ -1,6 +1,23 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
   <h1 class="title">The BeniHannah Recipe Book</h1>
   <a class="btn upper-right" href="/new">New Recipe</a>
+
+  <table id="recipe-list">
+    <tr>
+      <th>Title</th>
+      <td>Date Eaten</td>
+      <th>Rating</th>
+    </tr>
+
+    {% for recipe in recipes %}
+      <td><a href="/view/{{ recipe.id }}">{{ recipe.title }}</a></td>
+      <td>{{ recipe.date }}</td>
+      <td>{{ recipe.rating_avg }}</td>
+    {% endfor %}
+
+  </table>
+
 {% endblock %}
