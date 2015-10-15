@@ -13,9 +13,11 @@
     </tr>
 
     {% for recipe in recipes %}
-      <td><a href="/view/{{ recipe.id }}">{{ recipe.title }}</a></td>
-      <td>{{ recipe.date }}</td>
-      <td>{{ recipe.rating_avg }}</td>
+      <tr>
+        <td><a href="/view/{{ recipe.id }}">{{ recipe.title }}</a></td>
+        <td>{{ recipe.date }}</td>
+        <td>{{ recipe.rating_avg }}</td>
+      </tr>
     {% endfor %}
 
   </table>
