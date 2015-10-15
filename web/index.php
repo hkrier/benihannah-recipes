@@ -70,7 +70,9 @@ $app->get('/edit/{id}', function($id) use ($app) {
 });
 
 $app->get('/new', function() use($app) {
-  return $app['twig']->render('form.twig');
+  return $app['twig']->render('form.twig', [
+    'recipe' => FALSE,
+  ]);
 });
 
 $app->post('/create', function(Request $request) use($app) {
