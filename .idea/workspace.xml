@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e5d60b24-8da8-4ba6-8794-276dea730509" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/form.twig" afterPath="$PROJECT_DIR$/web/views/form.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/view.twig" afterPath="$PROJECT_DIR$/web/views/view.twig" />
     </list>
     <ignored path="recipes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,8 +107,8 @@
       <file leaf-file-name="form.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/form.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3852459">
-              <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.42307693">
+              <caret line="18" column="138" selection-start-line="18" selection-start-column="126" selection-end-line="18" selection-end-column="138" />
               <folding />
             </state>
           </provider>
@@ -490,8 +489,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/form.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3852459">
-          <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.42307693">
+          <caret line="18" column="138" selection-start-line="18" selection-start-column="126" selection-end-line="18" selection-end-column="138" />
           <folding />
         </state>
       </provider>
