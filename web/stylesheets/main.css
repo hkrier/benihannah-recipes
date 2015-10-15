@@ -41,6 +41,8 @@ textarea {
   padding: 5px 10px;
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid #DDDDDD;
+  margin: 10px 0;
 }
 
 @media only screen and (max-width: 500px) {
