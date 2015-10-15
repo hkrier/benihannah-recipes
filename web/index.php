@@ -2,6 +2,8 @@
 
 require('../vendor/autoload.php');
 
+use Symfony\Component\HttpFoundation\Request;
+
 $app = new Silex\Application();
 $app['debug'] = true;
 
@@ -35,15 +37,23 @@ $app->get('/new', function() use($app) {
   return $app['twig']->render('new.twig');
 });
 
-$app->get('/save', function() use($app) {
-  $st = $app['pdo']->prepare('SELECT name FROM test_table');
-  $st->execute();
+$app->post('/save', function(Request $request) use($app) {
+  $sql = "INSERT INTO recipes (url, title, image_url ingredients, description, date, rating_ben, rating_hannah)
+            VALUES (:url, :title, :image_url, :ingredients, :description, :date, :rating_ben, :rating_hannah)";
 
-  $names = array();
-  while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
-    $app['monolog']->addDebug('Row ' . $row['name']);
-    $names[] = $row;
-  }
+  $variables = [
+    ':url' => $request->get('url'),
+    ':title' => $request->get('title'),
+    ':image_url' => $request->get('image_url'),
+    ':ingredients' => $request->get('ingredients'),
+    ':description' => $request->get('description'),
+    ':date' => $request->get('date'),
+    ':rating_ben' => $request->get('rating_ben'),
+    ':rating_hannah' => $request->get('rating_hannah'),
+  ];
+  
+  $conn = $app['pdo']->prepare($sql);
+  $conn->execute($variables);
 
   return $app->redirect('/');
 });
