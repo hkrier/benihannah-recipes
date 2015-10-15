@@ -10,8 +10,10 @@ body {
 
 #recipe-list {
   width: 100%;
+  margin-top: 75px;
   text-align: left;
   color: #143153;
+  font-size: 18px;
 }
 
 #recipe-list th {

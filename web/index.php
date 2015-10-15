@@ -29,7 +29,7 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 
 // Our web handlers
 
-$app->get('/', function() use($app) {
+$app->get('/', function() use ($app) {
   $sql = "SELECT * FROM recipes";
   $conn = $app['pdo']->prepare($sql);
   $conn->execute();
@@ -42,6 +42,18 @@ $app->get('/', function() use($app) {
 
   return $app['twig']->render('index.twig', [
     'recipes' => $recipes,
+  ]);
+});
+
+$app->get('/view/{id}', function($id) use ($app) {
+  $sql = "SELECT * FROM recipes WHERE id = ?";
+  $conn = $app['pdo']->prepare($sql);
+  $conn->execute([$id]);
+
+  $recipe = $conn->fetch(PDO::FETCH_ASSOC);
+
+  return $app['twig']->render('view.twig', [
+      'recipe' => $recipe,
   ]);
 });
 

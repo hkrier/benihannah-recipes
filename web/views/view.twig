@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <a href="{{ recipe.url }}">
+        <h1 class="title">{{ recipe.title }}</h1>
+    </a>
+    <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
+
+    <img src="{{ recipe.image_url }}" />
+
+    <h3>Ingredients</h3>
+    <div class="ingredients">
+        {{ recipe.ingredients }}
+    </div>
+
+    <h3>Directions</h3>
+    <div class="directions">
+        {{ recipe.directions }}
+    </div>
+
+    <h5>Eaten on {{ recipe.date }}</h5>
+    <h5>Hannah's Rating: {{ recipe.rating_hannah }}</h5>
+    <h5>Ben's Rating: {{ recipe.rating_ben }}</h5>
+
+{% endblock %}
