@@ -4,7 +4,8 @@
     <h1 class="title">{% if recipe.title %} Edit {{ recipe.title }}{% else %}New Recipe{% endif %}</h1>
     <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
 
-    <form action="/save" method="post">
+    <form action="/{% if recipe %}update{% else %}create{% endif %}" method="post">
+        <input type="hidden" name="id" value="{{ recipe.id | default('') }}" />
         <input type="text" name="url" placeholder="URL" value="{{ recipe.url | default('') }}" />
         <input type="text" name="title" placeholder="Title" value="{{ recipe.title | default('') }}" />
         <input type="text" name="image_url" placeholder="Image URL" value="{{ recipe.image_url | default('') }}" />

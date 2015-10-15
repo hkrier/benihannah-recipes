@@ -73,7 +73,7 @@ $app->get('/new', function() use($app) {
   return $app['twig']->render('form.twig');
 });
 
-$app->post('/save', function(Request $request) use($app) {
+$app->post('/create', function(Request $request) use($app) {
   $sql = "INSERT INTO recipes (url, title, image_url, ingredients, directions, date, rating_ben, rating_hannah)
             VALUES (:url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)";
 
@@ -88,7 +88,28 @@ $app->post('/save', function(Request $request) use($app) {
     ':rating_hannah' => $request->get('rating_hannah'),
   ];
 
-  $app['monolog']->addDebug('!!!!! ' . $request->get('url'));
+  $conn = $app['pdo']->prepare($sql);
+  $conn->execute($variables);
+
+  return $app->redirect('/');
+});
+
+$app->post('/update', function(Request $request) use($app) {
+  $sql = "UPDATE recipes SET (url, title, image_url, ingredients, directions, date, rating_ben, rating_hannah)
+            = (:url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)
+          WHERE id = :id";
+
+  $variables = [
+      ':url' => $request->get('url'),
+      ':title' => $request->get('title'),
+      ':image_url' => $request->get('image_url'),
+      ':ingredients' => $request->get('ingredients'),
+      ':directions' => $request->get('directions'),
+      ':date' => $request->get('date'),
+      ':rating_ben' => $request->get('rating_ben'),
+      ':rating_hannah' => $request->get('rating_hannah'),
+      ':id' => $request->get('id'),
+  ];
 
   $conn = $app['pdo']->prepare($sql);
   $conn->execute($variables);
