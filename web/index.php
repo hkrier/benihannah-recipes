@@ -51,7 +51,9 @@ $app->post('/save', function(Request $request) use($app) {
     ':rating_ben' => $request->get('rating_ben'),
     ':rating_hannah' => $request->get('rating_hannah'),
   ];
-  
+
+  $app['monolog']->addDebug('!!!!! ' . $request->get('url'));
+
   $conn = $app['pdo']->prepare($sql);
   $conn->execute($variables);
 
