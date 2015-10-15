@@ -6,7 +6,17 @@
     <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
 
     <div class="meta-data">
-        {{ recipe.date }} &nbsp; Hannah: {{ recipe.rating_hannah }} &nbsp; Ben: {{ recipe.rating_ben }}
+        {{ recipe.date }} &nbsp; Hannah:
+        <div class="rating-background view-page">
+            <div class="rating" style="width: {{ recipe.rating_hannah / 5 * 100 }}%"></div>
+            <img class="rating-overlay" src="/images/paw_overlay.png" height="30" width="140">
+        </div>
+        &nbsp;
+        Ben:
+        <div class="rating-background view-page">
+            <div class="rating" style="width: {{ recipe.rating_ben / 5 * 100 }}%"></div>
+            <img class="rating-overlay" src="/images/paw_overlay.png" height="30" width="140">
+        </div>
     </div>
 
     <img class="recipe-img" src="{{ recipe.image_url }}" />
