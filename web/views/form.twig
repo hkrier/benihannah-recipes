@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1 class="title">New Recipe</h1>
+    <h1 class="title">{% if recipe.title %} Edit {{ recipe.title }}{% else %}New Recipe{% endif %}</h1>
     <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
 
     <form action="/save" method="post">
@@ -11,8 +11,8 @@
         <textarea type="textarea" name="ingredients" placeholder="Ingredients" rows="10">{{ recipe.ingredients | default('') }}</textarea>
         <textarea type="textarea" name="directions" placeholder="Directions" rows="10">{{ recipe.directions | default('') }}</textarea>
         <input type="text" name="date" placeholder="Date Eaten" value="{{ recipe.date | default('') }}" />
-        <input type="text" name="rating_ben" placeholder="Ben's Rating" value="{{ recipe.ben_rating | default('') }}" />
-        <input type="text" name="rating_hannah" placeholder="Hannah's Rating" value="{{ recipe.hannah_rating | default('') }}"  />
+        <input type="text" name="rating_ben" placeholder="Ben's Rating" value="{{ recipe.rating_ben | default('') }}" />
+        <input type="text" name="rating_hannah" placeholder="Hannah's Rating" value="{{ recipe.rating_hannah | default('') }}"  />
         <input class="btn" type="submit" value="Save" />
     </form>
 {% endblock %}
