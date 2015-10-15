@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <a class="title" href="{{ recipe.url }}">{{ recipe.title }}</a>
+    <a class="title" href="{{ recipe.url }}" target="_blank">{{ recipe.title }}</a>
     <a href="/edit/{{ recipe.id }}">edit</a>
     <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
 
