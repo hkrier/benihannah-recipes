@@ -74,6 +74,23 @@ a.title:hover {
   margin-top: 75px;
 }
 
+.rating-background {
+  background-color: #837EB1;
+  height: 30px;
+  width: 140px;
+  position: relative;
+}
+
+.rating {
+  height: 30px;
+  background-color: #0E5441;
+  position: absolute;
+}
+
+.rating-overlay {
+  position: absolute;
+}
+
 input,
 textarea {
   font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
