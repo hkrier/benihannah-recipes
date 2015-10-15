@@ -1,23 +1,21 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <a href="{{ recipe.url }}">
-        <h1 class="title">{{ recipe.title }}</h1>
-    </a>
+    <a class="title" href="{{ recipe.url }}">{{ recipe.title }}</a>
     <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
 
-    <div class="meta-data">Eaten on {{ recipe.date }}</div>
-    <span class="meta-data">Hannah's Rating: {{ recipe.rating_hannah }} &nbsp; &bull; &nbsp;</span>
-    <span class="meta-data">Ben's Rating: {{ recipe.rating_ben }}</span>
+    <div class="meta-data">
+        {{ recipe.date }} &nbsp; Hannah: {{ recipe.rating_hannah }} &nbsp; Ben: {{ recipe.rating_ben }}
+    </div>
 
-    <img src="{{ recipe.image_url }}" />
+    <img class="recipe-img" src="{{ recipe.image_url }}" />
 
-    <h3>Ingredients</h3>
+    <h3 class="subtitle">Ingredients</h3>
     <div class="ingredients">
         {{ recipe.ingredients }}
     </div>
 
-    <h3>Directions</h3>
+    <h3 class="subtitle">Directions</h3>
     <div class="directions">
         {{ recipe.directions }}
     </div>

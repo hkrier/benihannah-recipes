@@ -1,5 +1,6 @@
 body {
   font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #143153;
 }
 
 #content {
@@ -12,13 +13,12 @@ body {
   width: 100%;
   margin-top: 75px;
   text-align: left;
-  color: #143153;
   font-size: 18px;
 }
 
 #recipe-list th {
   font-weight: 600;
-  color: #5A5494;
+  color: #393276;
 }
 
 #recipe-list a {
@@ -36,6 +36,11 @@ a.title:hover {
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
+}
+
+.subtitle {
+  color: #393276;
+  font-weight: 600;
 }
 
 .btn {
@@ -56,6 +61,12 @@ a.title:hover {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.recipe-img {
+  width: 60%;
+  height: auto;
+  margin-top: 75px;
 }
 
 input,
