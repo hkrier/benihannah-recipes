@@ -8,6 +8,26 @@ body {
   position: relative;
 }
 
+#recipe-list {
+  width: 100%;
+  text-align: left;
+  color: #143153;
+}
+
+#recipe-list th {
+  font-weight: 600;
+  color: #5A5494;
+}
+
+#recipe-list a {
+  text-decoration: none;
+  color: #143153;
+}
+
+#recipe-list a:hover {
+  text-decoration: underline;
+}
+
 .title {
   color: #143153;
   font-size: 36px;
