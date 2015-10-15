@@ -7,6 +7,11 @@
 <body>
   {% include 'nav.html' %}
 
-  {% block content %}{% endblock %}
+  <div id="content">
+    <h1 id="title">The BeniHannah Recipe Book</h1>
+
+    {% block content %}{% endblock %}
+  </div>
+
 </body>
 </html>

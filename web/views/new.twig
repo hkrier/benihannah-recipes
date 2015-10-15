@@ -1,6 +1,8 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    Add new item!
-
+    <form action="/save" method="post">
+        <input type="text" name="url" placeholder="URL" />
+        <input type="submit" value="Save" />
+    </form>
 {% endblock %}

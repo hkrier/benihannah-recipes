@@ -1,3 +1,8 @@
+body {
+  font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
 #content {
   width: 80%;
   margin: 0 auto;
@@ -6,12 +11,10 @@
 
 #title {
   color: #143153;
-  font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 36px;
-  font-weight: normal;
 }
 
-#new-recipe-btn {
+.btn {
   position: absolute;
   right: 0;
   top: 0;
@@ -19,11 +22,10 @@
   color: #FFFFFF;
   background-color: #4B688B;
   text-decoration: none;
-  font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#new-recipe-btn:hover {
-  background-color: #051C38;
+.btn:hover {
+  background-color: #143153;
 }
 
 @media only screen and (max-width: 500px) {
