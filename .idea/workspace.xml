@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d60b24-8da8-4ba6-8794-276dea730509" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/views/delete.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/form.twig" afterPath="$PROJECT_DIR$/web/views/form.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
     </list>
     <ignored path="recipes.iws" />
@@ -41,16 +39,16 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6721311">
-              <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.5081967">
+              <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
               <folding>
-                <marker date="1444939003000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444939003000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444939003000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444939003000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
-                <marker date="1444939003000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
-                <marker date="1444939003000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
-                <marker date="1444939003000" expanded="true" signature="3673:3699" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444939046000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444939046000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444939046000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444939046000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
+                <marker date="1444939046000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
+                <marker date="1444939046000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
+                <marker date="1444939046000" expanded="true" signature="3673:3699" placeholder="SELECT * FRO..recipes..." />
               </folding>
             </state>
           </provider>
@@ -483,16 +481,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6721311">
-          <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.5081967">
+          <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
           <folding>
-            <marker date="1444939003000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444939003000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444939003000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444939003000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
-            <marker date="1444939003000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
-            <marker date="1444939003000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
-            <marker date="1444939003000" expanded="true" signature="3673:3699" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444939046000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444939046000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444939046000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444939046000" expanded="true" signature="1900:2110" placeholder="INSERT INTO ..." />
+            <marker date="1444939046000" expanded="true" signature="2682:2911" placeholder="UPDATE recip..." />
+            <marker date="1444939046000" expanded="true" signature="2688:2886" placeholder="INSERT INTO ..." />
+            <marker date="1444939046000" expanded="true" signature="3673:3699" placeholder="SELECT * FRO..recipes..." />
           </folding>
         </state>
       </provider>

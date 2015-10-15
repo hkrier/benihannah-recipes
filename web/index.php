@@ -124,7 +124,7 @@ $app->get('/delete-landing/{id}', function($id) use ($app) {
 });
 
 $app->get('/delete/{id}', function($id) use ($app) {
-    $sql = "DELTET FROM recipes WHERE id = ?";
+    $sql = "DELETE FROM recipes WHERE id = ?";
     $conn = $app['pdo']->prepare($sql);
     $conn->execute([$id]);
 
