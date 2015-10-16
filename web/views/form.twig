@@ -26,8 +26,10 @@
             {% endfor %}
         </div>
 
+        <br><br>
+
         <input type="hidden" name="rating_hannah" {% if recipe %}value="{{ recipe.rating_hannah }}"{% endif %}   />
-        <span>&nbsp; Hannah's Rating:</span>
+        <span>Hannah's Rating:</span>
         <div class="rating-background">
             <div class="rating" {% if recipe %}style="width: {{ recipe.rating_hannah / 5 * 100 }}%"{% endif %}></div>
             <img class="rating-overlay" src="/images/paw_overlay.png">
