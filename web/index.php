@@ -76,8 +76,8 @@ $app->get('/new', function() use($app) {
 });
 
 $app->post('/create', function(Request $request) use($app) {
-  $sql = "INSERT INTO recipes (url, title, image_url, ingredients, directions, date, rating_ben, rating_hannah)
-            VALUES (:url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)
+  $sql = "INSERT INTO recipes (id, url, title, image_url, ingredients, directions, date, rating_ben, rating_hannah)
+            VALUES (DEFAULT, :url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)
           RETURNING id";
 
   $variables = [
