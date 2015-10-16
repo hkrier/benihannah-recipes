@@ -92,11 +92,13 @@ $app->post('/create', function(Request $request) use($app) {
 
   $conn = $app['pdo']->prepare($sql);
   $conn->execute($variables);
+  $id = $conn->lastInsertId();
 
-  return $app->redirect('/');
+  return $app->redirect('/view/' . $id);
 });
 
 $app->post('/update', function(Request $request) use($app) {
+  $id = $request->get('id');
   $sql = "UPDATE recipes SET (url, title, image_url, ingredients, directions, date, rating_ben, rating_hannah)
             = (:url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)
           WHERE id = :id";
@@ -110,13 +112,13 @@ $app->post('/update', function(Request $request) use($app) {
       ':date' => strtotime($request->get('date')),
       ':rating_ben' => $request->get('rating_ben'),
       ':rating_hannah' => $request->get('rating_hannah'),
-      ':id' => $request->get('id'),
+      ':id' => $id,
   ];
 
   $conn = $app['pdo']->prepare($sql);
   $conn->execute($variables);
 
-  return $app->redirect('/');
+  return $app->redirect('/view/' . $id);
 });
 
 $app->get('/delete-landing/{id}', function($id) use ($app) {

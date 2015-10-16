@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d60b24-8da8-4ba6-8794-276dea730509" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.twig" afterPath="$PROJECT_DIR$/web/views/index.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
     </list>
     <ignored path="recipes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,20 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4615386">
-              <caret line="110" column="51" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.88495576">
+              <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
               <folding>
-                <marker date="1444974334000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444974334000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444974334000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1444974334000" expanded="true" signature="1930:2140" placeholder="INSERT INTO ..." />
-                <marker date="1444974334000" expanded="true" signature="2712:2941" placeholder="UPDATE recip..." />
-                <marker date="1444974334000" expanded="true" signature="2718:2916" placeholder="INSERT INTO ..." />
-                <marker date="1444974334000" expanded="true" signature="3708:3740" placeholder="DELETE FROM ..." />
-                <marker date="1444974334000" expanded="true" signature="3714:3740" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444975222000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444975222000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444975222000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1444975222000" expanded="true" signature="1930:2140" placeholder="INSERT INTO ..." />
+                <marker date="1444975222000" expanded="true" signature="2783:3012" placeholder="UPDATE recip..." />
+                <marker date="1444975222000" expanded="true" signature="2789:2987" placeholder="INSERT INTO ..." />
+                <marker date="1444975222000" expanded="true" signature="3774:3806" placeholder="DELETE FROM ..." />
+                <marker date="1444975222000" expanded="true" signature="3780:3806" placeholder="SELECT * FRO..recipes..." />
               </folding>
             </state>
           </provider>
@@ -108,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/index.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45081967">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state vertical-scroll-proportion="-4.117647">
+              <caret line="20" column="88" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
               <folding>
                 <element signature="e#526#575#0#HTML" expanded="true" />
               </folding>
@@ -153,10 +153,10 @@
         <option value="$PROJECT_DIR$/web/views/delete.twig" />
         <option value="$PROJECT_DIR$/web/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/web/scripts/recipe.js" />
-        <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/views/view.twig" />
         <option value="$PROJECT_DIR$/web/views/form.twig" />
         <option value="$PROJECT_DIR$/web/views/index.twig" />
+        <option value="$PROJECT_DIR$/web/index.php" />
       </list>
     </option>
   </component>
@@ -494,23 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4615386">
-          <caret line="110" column="51" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
-          <folding>
-            <marker date="1444974334000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444974334000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444974334000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1444974334000" expanded="true" signature="1930:2140" placeholder="INSERT INTO ..." />
-            <marker date="1444974334000" expanded="true" signature="2712:2941" placeholder="UPDATE recip..." />
-            <marker date="1444974334000" expanded="true" signature="2718:2916" placeholder="INSERT INTO ..." />
-            <marker date="1444974334000" expanded="true" signature="3708:3740" placeholder="DELETE FROM ..." />
-            <marker date="1444974334000" expanded="true" signature="3714:3740" placeholder="SELECT * FRO..recipes..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/view.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0">
@@ -535,10 +518,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45081967">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state vertical-scroll-proportion="-4.117647">
+          <caret line="20" column="88" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
           <folding>
             <element signature="e#526#575#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88495576">
+          <caret line="96" column="38" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
+          <folding>
+            <marker date="1444975222000" expanded="true" signature="812:833" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444975222000" expanded="true" signature="1220:1254" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444975222000" expanded="true" signature="1510:1544" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1444975222000" expanded="true" signature="1930:2140" placeholder="INSERT INTO ..." />
+            <marker date="1444975222000" expanded="true" signature="2783:3012" placeholder="UPDATE recip..." />
+            <marker date="1444975222000" expanded="true" signature="2789:2987" placeholder="INSERT INTO ..." />
+            <marker date="1444975222000" expanded="true" signature="3774:3806" placeholder="DELETE FROM ..." />
+            <marker date="1444975222000" expanded="true" signature="3780:3806" placeholder="SELECT * FRO..recipes..." />
           </folding>
         </state>
       </provider>
