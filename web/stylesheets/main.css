@@ -16,14 +16,16 @@ body {
   font-size: 18px;
 }
 
-#recipe-list th {
+#recipe-list th,
+.subtitle {
   font-weight: 600;
-  color: #393276;
+  color: #2B4A6F;
 }
 
-#recipe-list a {
+#recipe-list a,
+#recipe-list td {
   text-decoration: none;
-  color: #143153;
+  color: #4B688B;
 }
 
 #recipe-list a:hover,
@@ -36,11 +38,6 @@ a.title:hover {
   font-size: 36px;
   font-weight: normal;
   text-decoration: none;
-}
-
-.subtitle {
-  color: #393276;
-  font-weight: 600;
 }
 
 .meta-data {
