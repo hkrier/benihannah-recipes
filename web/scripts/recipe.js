@@ -3,6 +3,6 @@ $(document).on('ready', function() {
         var input = $('input[' + $(this).data('input') + ']');
         var rating = $(this).data('rating');
         input.val(rating);
-        $(this).siblings('.rating').width(rating * 10 + '%');
+        $(this).siblings('.rating').width(rating * 20 + '%');
     });
 });
