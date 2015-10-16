@@ -6,7 +6,7 @@ $(document).on('ready', function() {
         $(this).siblings('.rating').width(rating * 20 + '%');
     });
 
-    $('.rating-proxy').on('hover', function() {
+    $('.rating-proxy').hover(function() {
         var rating = $(this).data('rating');
         $(this).siblings('.rating').width(rating * 20 + '%');
     }, function() {
