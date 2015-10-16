@@ -94,7 +94,7 @@ a.title:hover {
   position: absolute;
 }
 
-.rating.view-page {
+.view-page .rating {
   height: 15px;
 }
 
