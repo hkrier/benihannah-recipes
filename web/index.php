@@ -92,7 +92,8 @@ $app->post('/create', function(Request $request) use($app) {
 
   $conn = $app['pdo']->prepare($sql);
   $conn->execute($variables);
-  $id = $conn->lastInsertId();
+
+  $id = $app['pdo']->lastInsertId();
 
   return $app->redirect('/view/' . $id);
 });
