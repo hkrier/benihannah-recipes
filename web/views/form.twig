@@ -16,8 +16,10 @@
         <textarea type="textarea" name="directions" placeholder="Directions" rows="10">{{ recipe.directions | default('') }}</textarea>
         <input type="text" name="date" placeholder="Date Eaten" {% if recipe %}value="{{ recipe.date }}"{% endif %}  />
 
+        <br><br>
+        
         <input type="hidden" name="rating_ben" {% if recipe %}value="{{ recipe.rating_ben }}"{% endif %}  />
-        <span>&nbsp; Ben's Rating:</span>
+        <span>Ben's Rating:</span>
         <div class="rating-background">
             <div class="rating" {% if recipe %}style="width: {{ recipe.rating_ben / 5 * 100 }}%"{% endif %}></div>
             <img class="rating-overlay" src="/images/paw_overlay.png">

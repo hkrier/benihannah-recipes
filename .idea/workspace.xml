@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e5d60b24-8da8-4ba6-8794-276dea730509" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/form.twig" afterPath="$PROJECT_DIR$/web/views/form.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/scripts/recipe.js" afterPath="$PROJECT_DIR$/web/scripts/recipe.js" />
     </list>
     <ignored path="recipes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,24 +84,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recipe.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="recipe.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/scripts/recipe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07194245">
-              <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/form.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4117646">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.22131148">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
-                <element signature="e#1394#1458#0#HTML" expanded="true" />
-                <element signature="e#1960#2027#0#HTML" expanded="true" />
+                <element signature="e#1413#1477#0#HTML" expanded="true" />
+                <element signature="e#1979#2046#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,8 +154,8 @@
         <option value="$PROJECT_DIR$/web/views/index.twig" />
         <option value="$PROJECT_DIR$/web/views/view.twig" />
         <option value="$PROJECT_DIR$/web/stylesheets/main.css" />
-        <option value="$PROJECT_DIR$/web/views/form.twig" />
         <option value="$PROJECT_DIR$/web/scripts/recipe.js" />
+        <option value="$PROJECT_DIR$/web/views/form.twig" />
       </list>
     </option>
   </component>
@@ -512,22 +511,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/form.twig">
+    <entry file="file://$PROJECT_DIR$/web/scripts/recipe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4117646">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#1394#1458#0#HTML" expanded="true" />
-            <element signature="e#1960#2027#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/recipe.js">
+    <entry file="file://$PROJECT_DIR$/web/views/form.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07194245">
-          <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
-          <folding />
+        <state vertical-scroll-proportion="0.22131148">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="e#1413#1477#0#HTML" expanded="true" />
+            <element signature="e#1979#2046#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
