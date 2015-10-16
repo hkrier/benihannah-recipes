@@ -5,4 +5,13 @@ $(document).on('ready', function() {
         input.val(rating);
         $(this).siblings('.rating').width(rating * 20 + '%');
     });
+
+    $('.rating-proxy').on('hover', function() {
+        var rating = $(this).data('rating');
+        $(this).siblings('.rating').width(rating * 20 + '%');
+    }, function() {
+        var input = $('input[name="' + $(this).data('input') + '"]');
+        var rating = input.val();
+        $(this).siblings('.rating').width(rating * 20 + '%');
+    });
 });
