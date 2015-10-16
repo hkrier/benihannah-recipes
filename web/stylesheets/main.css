@@ -79,16 +79,28 @@ a.title:hover {
   height: 30px;
   width: 140px;
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rating-background.view-page {
+  height: 15px;
+  width: 75px;
 }
 
 .rating {
   height: 30px;
-  background-color: #0E5441;
+  background-color: #4B688B;
   position: absolute;
+}
+
+.rating.view-page {
+  height: 15px;
 }
 
 .rating-overlay {
   position: absolute;
+  width: 100%;
 }
 
 input,
