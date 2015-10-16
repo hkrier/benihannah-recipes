@@ -107,7 +107,7 @@ $app->post('/update', function(Request $request) use($app) {
       ':image_url' => $request->get('image_url'),
       ':ingredients' => $request->get('ingredients'),
       ':directions' => $request->get('directions'),
-      ':date' => $request->get('date'),
+      ':date' => strtotime($request->get('date')),
       ':rating_ben' => $request->get('rating_ben'),
       ':rating_hannah' => $request->get('rating_hannah'),
       ':id' => $request->get('id'),
