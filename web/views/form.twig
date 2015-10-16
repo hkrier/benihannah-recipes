@@ -17,6 +17,7 @@
         <input type="text" name="date" placeholder="Date Eaten" {% if recipe %}value="{{ recipe.date }}"{% endif %}  />
 
         <input type="hidden" name="rating_ben" {% if recipe %}value="{{ recipe.rating_ben }}"{% endif %}  />
+        <span>&nbsp; Ben's Rating:</span>
         <div class="rating-background">
             <div class="rating" {% if recipe %}style="width: {{ recipe.rating_ben / 5 * 100 }}%"{% endif %}></div>
             <img class="rating-overlay" src="/images/paw_overlay.png">
@@ -26,6 +27,7 @@
         </div>
 
         <input type="hidden" name="rating_hannah" {% if recipe %}value="{{ recipe.rating_hannah }}"{% endif %}   />
+        <span>&nbsp; Hannah's Rating:</span>
         <div class="rating-background">
             <div class="rating" {% if recipe %}style="width: {{ recipe.rating_hannah / 5 * 100 }}%"{% endif %}></div>
             <img class="rating-overlay" src="/images/paw_overlay.png">
