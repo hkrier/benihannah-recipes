@@ -85,7 +85,7 @@ $app->post('/create', function (Request $request) use ($app) {
         ':image_url' => $request->get('image_url'),
         ':ingredients' => $request->get('ingredients'),
         ':directions' => $request->get('directions'),
-        ':date' => $request->get('date'),
+        ':date' => strtotime($request->get('date')),
         ':rating_ben' => $request->get('rating_ben'),
         ':rating_hannah' => $request->get('rating_hannah'),
     ];
@@ -94,11 +94,15 @@ $app->post('/create', function (Request $request) use ($app) {
     $st->execute($variables);
 
     // This is returning a really high number... why? shared db?
-    // $id = $app['pdo']->lastInsertId();
+    $id = $app['pdo']->lastInsertId();
 
+    // Hate to have to do it this way...
+//    $sql = "SELECT MAX(id) FROM recipes";
+//    $st = $app['pdo']->prepare($sql);
+//    $st->execute();
+//    $id = $st->fetch(PDO::FETCH_NUM);
 
-
-    return $app->redirect('/');
+    return $app->redirect('/view/' . $id);
 });
 
 $app->post('/update', function (Request $request) use ($app) {
