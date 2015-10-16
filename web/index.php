@@ -31,11 +31,11 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 
 $app->get('/', function() use ($app) {
   $sql = "SELECT * FROM recipes";
-  $conn = $app['pdo']->prepare($sql);
-  $conn->execute();
+  $st = $app['pdo']->prepare($sql);
+  $st->execute();
 
   $recipes = [];
-  while ($row = $conn->fetch(PDO::FETCH_ASSOC)) {
+  while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
     $row['rating_avg'] = round(($row['rating_ben'] + $row['rating_hannah']) / 2, 1);
     $recipes[] = $row;
   }
@@ -47,10 +47,10 @@ $app->get('/', function() use ($app) {
 
 $app->get('/view/{id}', function($id) use ($app) {
   $sql = "SELECT * FROM recipes WHERE id = ?";
-  $conn = $app['pdo']->prepare($sql);
-  $conn->execute([$id]);
+  $st = $app['pdo']->prepare($sql);
+  $st->execute([$id]);
 
-  $recipe = $conn->fetch(PDO::FETCH_ASSOC);
+  $recipe = $st->fetch(PDO::FETCH_ASSOC);
 
   return $app['twig']->render('view.twig', [
       'recipe' => $recipe,
@@ -59,10 +59,10 @@ $app->get('/view/{id}', function($id) use ($app) {
 
 $app->get('/edit/{id}', function($id) use ($app) {
   $sql = "SELECT * FROM recipes WHERE id = ?";
-  $conn = $app['pdo']->prepare($sql);
-  $conn->execute([$id]);
+  $st = $app['pdo']->prepare($sql);
+  $st->execute([$id]);
 
-  $recipe = $conn->fetch(PDO::FETCH_ASSOC);
+  $recipe = $st->fetch(PDO::FETCH_ASSOC);
 
   return $app['twig']->render('form.twig', [
       'recipe' => $recipe,
@@ -91,11 +91,11 @@ $app->post('/create', function(Request $request) use($app) {
     ':rating_hannah' => $request->get('rating_hannah'),
   ];
 
-  $conn = $app['pdo']->prepare($sql);
-  $conn->execute($variables);
-  $id = $conn->fetch();
+  $st = $app['pdo']->prepare($sql);
+  $st->execute($variables);
+  $id = $st->fetch(PDO::FETCH_ASSOC);
 
-  return $app->redirect('/view/' . $id);
+  return $app->redirect('/view/' . $id['id']);
 });
 
 $app->post('/update', function(Request $request) use($app) {
@@ -116,8 +116,8 @@ $app->post('/update', function(Request $request) use($app) {
       ':id' => $id,
   ];
 
-  $conn = $app['pdo']->prepare($sql);
-  $conn->execute($variables);
+  $st = $app['pdo']->prepare($sql);
+  $st->execute($variables);
 
   return $app->redirect('/view/' . $id);
 });
@@ -130,8 +130,8 @@ $app->get('/delete-landing/{id}', function($id) use ($app) {
 
 $app->get('/delete/{id}', function($id) use ($app) {
     $sql = "DELETE FROM recipes WHERE id = ?";
-    $conn = $app['pdo']->prepare($sql);
-    $conn->execute([$id]);
+    $st = $app['pdo']->prepare($sql);
+    $st->execute([$id]);
 
     return $app->redirect('/');
 });
