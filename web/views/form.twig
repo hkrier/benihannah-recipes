@@ -21,7 +21,7 @@
             <div class="rating" {% if recipe %}style="width: {{ recipe.rating_ben / 5 * 100 }}%"{% endif %}></div>
             <img class="rating-overlay" src="/images/paw_overlay.png">
             {% for i in 1..5 %}
-                <div class="rating-proxy" data-rating="{{ i }}"></div>
+                <div class="rating-proxy" data-rating="{{ i }}" data-input="rating_ben"></div>
             {% endfor %}
         </div>
 
