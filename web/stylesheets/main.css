@@ -103,6 +103,29 @@ a.title:hover {
   width: 100%;
 }
 
+.rating-proxy {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  position: absolute;
+}
+
+.rating-proxy[data-rating="2"] {
+  left: 28px;
+}
+
+.rating-proxy[data-rating="3"] {
+  left: 56px;
+}
+
+.rating-proxy[data-rating="4"] {
+  left: 84px;
+}
+
+.rating-proxy[data-rating="5"] {
+  left: 112px;
+}
+
 input,
 textarea {
   font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
