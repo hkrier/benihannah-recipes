@@ -77,7 +77,8 @@ $app->get('/new', function() use($app) {
 
 $app->post('/create', function(Request $request) use($app) {
   $sql = "INSERT INTO recipes (url, title, image_url, ingredients, directions, date, rating_ben, rating_hannah)
-            VALUES (:url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)";
+            VALUES (:url, :title, :image_url, :ingredients, :directions, :date, :rating_ben, :rating_hannah)
+          RETURNING id";
 
   $variables = [
     ':url' => $request->get('url'),
@@ -91,9 +92,7 @@ $app->post('/create', function(Request $request) use($app) {
   ];
 
   $conn = $app['pdo']->prepare($sql);
-  $conn->execute($variables);
-
-  $id = $app['pdo']->lastInsertId();
+  $id = $conn->execute($variables);
 
   return $app->redirect('/view/' . $id);
 });
