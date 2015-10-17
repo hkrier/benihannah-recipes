@@ -22,6 +22,18 @@ body {
   color: #2B4A6F;
 }
 
+#recipe-list th.active:before {
+  margin-right: 5px;
+}
+
+#recipe-list th.asc:before {
+  content: '\25b2';
+}
+
+#recipe-list th.desc:before {
+  content: '\25bc';
+}
+
 #recipe-list a,
 #recipe-list td {
   text-decoration: none;

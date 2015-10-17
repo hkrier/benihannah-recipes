@@ -44,7 +44,7 @@ $app->get('/', function () use ($app) {
         if ($a['rating_avg'] == $b['rating_avg']) {
             return 0;
         }
-        return ($a['rating_avg'] < $b['rating_avg']) ? -1 : 1;
+        return ($a['rating_avg'] > $b['rating_avg']) ? -1 : 1;
     });
 
     return $app['twig']->render('index.twig', [
