@@ -39,6 +39,6 @@ $(document).on('ready', function() {
             });
         }
 
-        $recipes.insertAfter('#recipe-list th:last-child');
+        $recipes.insertAfter('#recipe-list tr:last-child');
     });
 });
