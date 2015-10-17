@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e5d60b24-8da8-4ba6-8794-276dea730509" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/stylesheets/main.css" afterPath="$PROJECT_DIR$/web/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recipes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,8 +71,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92287916">
-              <caret line="191" column="2" selection-start-line="191" selection-start-column="2" selection-end-line="191" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.22879177">
+              <caret line="191" column="14" selection-start-line="191" selection-start-column="14" selection-end-line="191" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -567,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92287916">
-          <caret line="191" column="2" selection-start-line="191" selection-start-column="2" selection-end-line="191" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.22879177">
+          <caret line="191" column="14" selection-start-line="191" selection-start-column="14" selection-end-line="191" selection-end-column="14" />
           <folding />
         </state>
       </provider>

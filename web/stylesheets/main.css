@@ -181,6 +181,18 @@ and (-webkit-min-device-pixel-ratio: 2) {
     display: none;
   }
 
+  .title {
+    font-size: 66px;
+  }
+
+  .title img {
+    height: 60px;
+  }
+
+  #recipe-list {
+    font-size: 40px;
+  }
+
   .meta-data {
     font-size: 12px;
   }
@@ -189,7 +201,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     height: 37px;
     width: 175px;
   }
-  
+
   .view-page .rating {
     height: 37px;
   }
