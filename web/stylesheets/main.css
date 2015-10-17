@@ -28,7 +28,7 @@ body {
   content: '\25b2';
 }
 
-#recipe-list th.desc:before {
+#recipe-list th.active.desc:before {
   content: '\25bc';
 }
 

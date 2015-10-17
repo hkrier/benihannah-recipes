@@ -24,7 +24,7 @@ $(document).on('ready', function() {
             $(this).addClass('active');
         }
 
-        var $recipes = $('.recipes');
+        var $recipes = $('.recipe');
         $recipes.remove();
         var field = $(this).data('sort-field');
         if ($(this).hasClass('desc')) {
