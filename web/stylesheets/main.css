@@ -173,11 +173,25 @@ and (-webkit-min-device-pixel-ratio: 2) {
   #content {
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
   }
 
   .btn,
   .edit-link {
     display: none;
+  }
+
+  .meta-data {
+    font-size: 12px;
+  }
+
+  .rating-background.view-page {
+    height: 37px;
+    width: 175px;
+  }
+  
+  .view-page .rating {
+    height: 37px;
   }
 
   .recipe-img {
