@@ -63,6 +63,19 @@ a.title:hover {
   font-size: 14px;
 }
 
+.edit-link {
+  display: inline-block;
+  background-color: #DDDDDD;
+}
+
+.edit-link img {
+  display: block;
+}
+
+.edit-link:hover {
+  background-color: #4B688B;
+}
+
 .btn {
   width: auto;
   padding: 13px 35px;
