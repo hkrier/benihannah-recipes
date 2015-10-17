@@ -8,9 +8,9 @@
   <table id="recipe-list">
     <tr>
       <th></th>
-      <th class="title-heading">Title</th>
-      <th class="date-heading">Date Eaten</th>
-      <th class="rating-heading active desc">Rating</th>
+      <th data-sort-field="title">Title</th>
+      <th class="desc" data-sort-field="date">Date Eaten</th>
+      <th class="active desc" data-sort-field="rating">Rating</th>
     </tr>
 
     {% for recipe in recipes %}

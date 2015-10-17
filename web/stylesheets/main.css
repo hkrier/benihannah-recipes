@@ -20,13 +20,11 @@ body {
 .subtitle {
   font-weight: 600;
   color: #2B4A6F;
+  cursor: pointer;
 }
 
 #recipe-list th.active:before {
   margin-right: 5px;
-}
-
-#recipe-list th.asc:before {
   content: '\25b2';
 }
 
