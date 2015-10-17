@@ -40,6 +40,10 @@ $app->get('/', function () use ($app) {
         $recipes[] = $row;
     }
 
+    usort($recipes, function($a, $b) {
+        return $b['rating_avg'] - $a['rating_avg'];
+    });
+
     return $app['twig']->render('index.twig', [
         'recipes' => $recipes,
     ]);

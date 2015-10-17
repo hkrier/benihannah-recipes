@@ -8,13 +8,13 @@
   <table id="recipe-list">
     <tr>
       <th></th>
-      <th>Title</th>
-      <th>Date Eaten</th>
-      <th>Rating</th>
+      <th class="title">Title</th>
+      <th class="date">Date Eaten</th>
+      <th class="rating active desc">Rating</th>
     </tr>
 
     {% for recipe in recipes %}
-      <tr>
+      <tr class="recipe" data-title="{{ recipe.title }}" data-date="{{ recipe.date }}" data-rating="{{ recipe.rating_avg }}">
         <td>
           <div class="list-img" style="background-image: url('{{ recipe.image_url }}')"></div>
         </td>
