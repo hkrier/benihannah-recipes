@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d60b24-8da8-4ba6-8794-276dea730509" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/form.twig" afterPath="$PROJECT_DIR$/web/views/form.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/views/index.twig" afterPath="$PROJECT_DIR$/web/views/index.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/stylesheets/main.css" afterPath="$PROJECT_DIR$/web/stylesheets/main.css" />
     </list>
     <ignored path="recipes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.2777778">
-              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.6529563">
+              <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -103,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/views/form.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5739796">
-              <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+            <state vertical-scroll-proportion="-7.352941">
+              <caret line="26" column="94" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
               <folding>
                 <element signature="e#1447#1511#0#HTML" expanded="true" />
                 <element signature="e#2013#2080#0#HTML" expanded="true" />
@@ -156,9 +155,9 @@
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/web/scripts/recipe.js" />
         <option value="$PROJECT_DIR$/web/views/view.twig" />
-        <option value="$PROJECT_DIR$/web/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/web/views/index.twig" />
         <option value="$PROJECT_DIR$/web/views/form.twig" />
+        <option value="$PROJECT_DIR$/web/stylesheets/main.css" />
       </list>
     </option>
   </component>
@@ -538,14 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/stylesheets/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2777778">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/cat_i.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -564,12 +555,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/form.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5739796">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        <state vertical-scroll-proportion="-7.352941">
+          <caret line="26" column="94" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
           <folding>
             <element signature="e#1447#1511#0#HTML" expanded="true" />
             <element signature="e#2013#2080#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6529563">
+          <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

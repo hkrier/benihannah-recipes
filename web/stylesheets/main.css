@@ -165,9 +165,22 @@ textarea {
   margin: 10px 0;
 }
 
-@media only screen and (max-width: 500px) {
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
   #content {
     width: 100%;
-    margin: 0;
+    padding: 20px;
+  }
+
+  .btn,
+  .edit-link {
+    display: none;
+  }
+
+  .recipe-img {
+    width: 100%;
   }
 }
