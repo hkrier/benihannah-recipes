@@ -33,6 +33,14 @@ a.title:hover {
   text-decoration: underline;
 }
 
+.list-img {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .title {
   color: #143153;
   font-size: 36px;

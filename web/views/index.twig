@@ -19,7 +19,7 @@
           <div class="list-img" style="background-image: url('{{ recipe.image_url }}')"></div>
         </td>
         <td><a href="/view/{{ recipe.id }}">{{ recipe.title }}</a></td>
-        <td>{{ recipe.date|date('m/d/y') }}</td>
+        <td>{{ recipe.date|date('M j, Y') }}</td>
         <td>
           <div class="rating-background">
             <div class="rating" style="width: {{ recipe.rating_avg / 5 * 100 }}%"></div>
