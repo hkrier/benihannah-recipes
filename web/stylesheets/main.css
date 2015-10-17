@@ -167,8 +167,8 @@ textarea {
 
 
 @media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
+and (min-device-width: 375px)
+and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2) {
   #content {
     width: 100%;
@@ -191,6 +191,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   #recipe-list {
     font-size: 40px;
+  }
+
+  #recipe-list td {
+    padding: 6px;
   }
 
   .meta-data {
