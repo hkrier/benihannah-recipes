@@ -188,15 +188,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .title img {
     height: 60px;
   }
-
-  #recipe-list {
-    font-size: 40px;
-  }
-
-  #recipe-list td {
-    padding: 6px;
-  }
-
+  
   .meta-data {
     font-size: 12px;
   }
