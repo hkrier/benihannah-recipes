@@ -41,7 +41,10 @@ $app->get('/', function () use ($app) {
     }
 
     usort($recipes, function($a, $b) {
-        return $b['rating_avg'] - $a['rating_avg'];
+        if ($a['rating_avg'] == $b['rating_avg']) {
+            return 0;
+        }
+        return ($a['rating_avg'] < $b['rating_avg']) ? -1 : 1;
     });
 
     return $app['twig']->render('index.twig', [
