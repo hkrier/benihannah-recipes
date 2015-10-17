@@ -7,6 +7,7 @@
 
   <table id="recipe-list">
     <tr>
+      <th></th>
       <th>Title</th>
       <th>Date Eaten</th>
       <th>Rating</th>
@@ -14,6 +15,9 @@
 
     {% for recipe in recipes %}
       <tr>
+        <td>
+          <div class="list-img" style="background-image: url('{{ recipe.image_url }}')"></div>
+        </td>
         <td><a href="/view/{{ recipe.id }}">{{ recipe.title }}</a></td>
         <td>{{ recipe.date|date('m/d/y') }}</td>
         <td>

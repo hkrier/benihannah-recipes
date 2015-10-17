@@ -23,12 +23,12 @@
 
     <h3 class="subtitle">Ingredients</h3>
     <div class="ingredients">
-        {{ recipe.ingredients }}
+        {{ recipe.ingredients|nl2br }}
     </div>
 
     <h3 class="subtitle">Directions</h3>
     <div class="directions">
-        {{ recipe.directions }}
+        {{ recipe.directions|nl2br }}
     </div>
 
 {% endblock %}
