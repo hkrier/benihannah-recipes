@@ -37,10 +37,12 @@ $(document).on('ready', function() {
             });
         }
         else {
-            if ($(recipe1).data(field) == $(recipe2).data(field)) {
-                return 0;
-            }
-            return ($(recipe1).data(field) < $(recipe2).data(field)) ? -1 : 1;
+            $recipes.sort(function(recipe1, recipe2) {
+                if ($(recipe1).data(field) == $(recipe2).data(field)) {
+                    return 0;
+                }
+                return ($(recipe1).data(field) < $(recipe2).data(field)) ? -1 : 1;
+            });
         }
 
         $recipes.insertAfter('#recipe-list tr:last-child');
