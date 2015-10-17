@@ -20,7 +20,7 @@ $(document).on('ready', function() {
             $(this).toggleClass('desc');
         }
         else {
-            $('#recipe-list th').removeClass('.active');
+            $('#recipe-list th').removeClass('active');
             $(this).addClass('active');
         }
 
@@ -30,13 +30,17 @@ $(document).on('ready', function() {
         if ($(this).hasClass('desc')) {
             // sort in reverse order
             $recipes.sort(function(recipe1, recipe2) {
-                return $(recipe2).data(field) - $(recipe1).data(field);
+                if ($(recipe1).data(field) == $(recipe2).data(field)) {
+                    return 0;
+                }
+                return ($(recipe1).data(field) > $(recipe2).data(field)) ? -1 : 1;
             });
         }
         else {
-            $recipes.sort(function(recipe1, recipe2) {
-                return $(recipe1).data(field) - $(recipe2).data(field);
-            });
+            if ($(recipe1).data(field) == $(recipe2).data(field)) {
+                return 0;
+            }
+            return ($(recipe1).data(field) < $(recipe2).data(field)) ? -1 : 1;
         }
 
         $recipes.insertAfter('#recipe-list tr:last-child');
