@@ -220,4 +220,12 @@ and (max-device-width: 667px) {
   td:nth-child(3) {
     white-space: nowrap;
   }
+
+  .recipe-img {
+    margin-top: 30px;
+  }
+
+  .meta-data-date {
+    display: block;
+  }
 }
