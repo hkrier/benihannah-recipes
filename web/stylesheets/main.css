@@ -180,27 +180,6 @@ and (max-device-width: 667px) {
     display: none;
   }
 
-  .title {
-    font-size: 66px;
-  }
-
-  .title img {
-    height: 60px;
-  }
-
-  .meta-data {
-    font-size: 12px;
-  }
-
-  .rating-background.view-page {
-    height: 37px;
-    width: 175px;
-  }
-
-  .view-page .rating {
-    height: 37px;
-  }
-
   .recipe-img {
     width: 100%;
   }
