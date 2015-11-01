@@ -186,17 +186,35 @@ and (max-device-width: 667px) {
   }
 
   .rating-background {
-    height: 17px;
-    width: 80px;
+    width: 70px;
+    height: 15px;
   }
 
   .rating {
-    height: 17px;
+    height: 15px;
   }
 
   .title {
     text-align: center;
     font-size: 30px;
-    margin: 10px 0;
+    margin: 0;
+  }
+
+  #recipe-list {
+    margin-top: 30px;
+    font-size: 14px;
+    border-collapse: collapse;
+  }
+
+  #recipe-list td {
+    padding: 10px 0;
+  }
+
+  .recipe {
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  td:nth-child(3) {
+    white-space: nowrap;
   }
 }
