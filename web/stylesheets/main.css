@@ -195,7 +195,6 @@ and (max-device-width: 667px) {
   }
 
   .title {
-    text-align: center;
     font-size: 30px;
     margin: 0;
   }
@@ -210,8 +209,12 @@ and (max-device-width: 667px) {
     padding: 10px 0;
   }
 
-  .recipe {
+  #recipe-list tr {
     border-bottom: 1px solid #DDDDDD;
+  }
+
+  #recipe-list td:nth-child(2) {
+    padding-right: 4px !important;
   }
 
   td:nth-child(3) {
