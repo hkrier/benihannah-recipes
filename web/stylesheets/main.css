@@ -1,6 +1,7 @@
 body {
   font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #143153;
+  margin: 0;
 }
 
 #content {
@@ -170,16 +171,32 @@ textarea {
 and (max-device-width: 667px) {
   #content {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
   }
 
   .btn,
-  .edit-link {
+  .edit-link,
+  .list-img {
     display: none;
   }
 
   .recipe-img {
     width: 100%;
+  }
+
+  .rating-background {
+    height: 17px;
+    width: 80px;
+  }
+
+  .rating {
+    height: 17px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
   }
 }
