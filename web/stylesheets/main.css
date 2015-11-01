@@ -1,7 +1,6 @@
 body {
   font-family: ProximaNova, AvenirNext-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #143153;
-  margin: 0;
 }
 
 #content {
@@ -169,6 +168,10 @@ textarea {
 
 @media only screen
 and (max-device-width: 667px) {
+  body {
+    margin: 0;
+  }
+  
   #content {
     width: 100%;
     padding: 10px;
