@@ -63,16 +63,15 @@ a.title:hover {
   font-size: 14px;
 }
 
-.edit-link {
-  display: inline-block;
+#edit-link {
   background-color: #DDDDDD;
 }
 
-.edit-link img {
+#edit-link img {
   display: block;
 }
 
-.edit-link:hover {
+#edit-link:hover {
   background-color: #4B688B;
 }
 
@@ -165,6 +164,20 @@ textarea {
   margin: 10px 0;
 }
 
+#edit-link,
+#new-recipe {
+    display: none;
+}
+
+.admin-logged-in #edit-link,
+.admin-logged-in #new-recipe {
+    display: inline-block;
+}
+
+.admin-logged-in #fb-login,
+.logged-in #fb-login {
+    display: none;
+}
 
 @media only screen
 and (max-device-width: 667px) {
@@ -179,7 +192,7 @@ and (max-device-width: 667px) {
   }
 
   .btn,
-  .edit-link,
+  #edit-link,
   .list-img {
     display: none;
   }
