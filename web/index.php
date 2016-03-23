@@ -155,7 +155,7 @@ $app->get('/delete/{id}', function ($id) use ($app) {
 });
 
 $app->post('/user-login', function (Request $request) use ($app) {
-    $sql = "INSERT INTO users (id, name, role) VALUES (:id, :name, :role) ON CONFLICT (id) DO NOTHING";
+    $sql = "INSERT INTO users (id, name, role) VALUES (:id, :name, :role) ON CONFLICT DO NOTHING";
 
     $variables = [
         ':id' => $request->get('id'),
