@@ -5,6 +5,15 @@ function statusChangeCallback(response) {
     // Logged into app and Facebook.
     if (response.status === 'connected') {
         FB.api('/me', function(response) {
+            var data = response;
+            $.ajax({
+                method: 'POST',
+                url: '/user-login',
+                data: data,
+                success: function(response) {
+                    stop = 'here';
+                }
+            });
             console.log(JSON.stringify(response));
         });
         var loginClass = ($.inArray(response.authResponse.userID, [HANNAH_UID, BEN_UID]) !== -1) 

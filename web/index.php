@@ -3,6 +3,10 @@
 require('../vendor/autoload.php');
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\JsonResponse;
+
+define('ADMIN_ROLE', 1);
+define('BASIC_ROLE', 2);
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -148,6 +152,21 @@ $app->get('/delete/{id}', function ($id) use ($app) {
     $st->execute([$id]);
 
     return $app->redirect('/');
+});
+
+$app->post('/user-login', function (Request $request) use ($app) {
+    $sql = "INSERT INTO users (id, name, role) VALUES (:id, :name, :role) ON CONFLICT (id) DO NOTHING;";
+
+    $variables = [
+        ':id' => $request->get('id'),
+        ':name' => $request->get('name'),
+        ':role' => BASIC_ROLE,
+    ];
+
+    $st = $app['pdo']->prepare($sql);
+    $st->execute($variables);
+
+    return new JsonResponse();
 });
 
 $app->run();
