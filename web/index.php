@@ -166,7 +166,7 @@ $app->post('/user-login', function (Request $request) use ($app) {
     $st = $app['pdo']->prepare($sql);
     $st->execute($variables);
 
-    return new JsonResponse();
+    return new JsonResponse(['is_this' => 'working?']);
 });
 
 $app->run();
