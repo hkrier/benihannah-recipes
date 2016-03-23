@@ -4,6 +4,9 @@ var BEN_UID = '2532088713305';
 function statusChangeCallback(response) {
     // Logged into app and Facebook.
     if (response.status === 'connected') {
+        FB.api('/me', function(response) {
+            console.log(JSON.stringify(response));
+        });
         var loginClass = ($.inArray(response.authResponse.userID, [HANNAH_UID, BEN_UID]) !== -1) 
             ? 'admin-logged-in' : 'logged-in';
         $('#content').addClass(loginClass); 
