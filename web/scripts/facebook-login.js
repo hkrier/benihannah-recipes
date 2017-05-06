@@ -6,7 +6,7 @@ function statusChangeCallback(response) {
     if (response.status === 'connected') {
         var loginClass = ($.inArray(response.authResponse.userID, [HANNAH_UID, BEN_UID]) !== -1) 
             ? 'admin-logged-in' : 'logged-in';
-        $('#content').addClass(loginClass); 
+        $('body').addClass(loginClass); 
     } 
     // The person is logged into Facebook, but not app
     else if (response.status === 'not_authorized') {

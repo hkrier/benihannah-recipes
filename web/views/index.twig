@@ -1,14 +1,21 @@
 {% extends "layout.html" %}
 
+{% block previews %}
+  <div id="previews">
+    <div id="previews-scroll">
+      {% for recipe in recipes %}
+        <a href="/view/{{ recipe.id }}">
+          <img src="{{ recipe.image_url }}" height="300" />
+        </a>
+      {% endfor %} 
+    </div>
+  </div>
+{% endblock %}
+
 {% block content %}
-
-  <h1 class="title">The Ben<img src="/images/cat_i.png" height="31" />Hannah Recipe Book</h1>
-  <span id="fb-login" class="btn upper-right">Log In</span>
-  <a id="new-recipe" class="btn upper-right" href="/new">New Recipe</a>
-
+  <h1>All Recipes</h1>
   <table id="recipe-list">
     <tr>
-      <th></th>
       <th data-sort-field="title">Title</th>
       <th class="desc" data-sort-field="date">Date Eaten</th>
       <th class="active desc" data-sort-field="rating">Rating</th>
@@ -17,9 +24,9 @@
     {% for recipe in recipes %}
       <tr class="recipe" data-title="{{ recipe.title }}" data-date="{{ recipe.date }}" data-rating="{{ recipe.rating_avg }}">
         <td>
-          <div class="list-img" style="background-image: url('{{ recipe.image_url }}')"></div>
+            <div class="list-img" style="background-image: url('{{ recipe.image_url }}')"></div>
+            <a href="/view/{{ recipe.id }}">{{ recipe.title }}</a>
         </td>
-        <td><a href="/view/{{ recipe.id }}">{{ recipe.title }}</a></td>
         <td>{{ recipe.date|date('M j, Y') }}</td>
         <td>
           <div class="rating-background">
