@@ -1,11 +1,12 @@
 {% extends "layout.html" %}
 
 {% block content %}
+  <article>  
     <a class="title" href="{{ recipe.url }}" target="_blank">{{ recipe.title }}</a>
     <a id="edit-link" href="/edit/{{ recipe.id }}">
         <img src="/images/edit_icon.png" width="25" height="25" />
     </a>
-    <a class="btn upper-right" href="/">&larr; &nbsp; Back to List</a>
+
 
     <div class="meta-data">
         <span class="meta-data-date">{{ recipe.date|date('F j, Y') }} &nbsp;</span>
@@ -33,5 +34,5 @@
     <div class="directions">
         {{ recipe.directions|nl2br }}
     </div>
-
+  </article>
 {% endblock %}
