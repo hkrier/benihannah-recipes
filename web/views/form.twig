@@ -3,7 +3,11 @@
 {% block content %}
   <article>  
     <h1 class="title">
-        {% if recipe %} Edit {{ recipe.title }}{% else %}New Recipe{% endif %}
+        {% if recipe %} 
+            Edit <a href="/view/{{ recipe.id }}">{{ recipe.title }}</a>
+        {% else %}
+            New Recipe
+        {% endif %}
     </h1>
 
     <form action="/{% if recipe %}update{% else %}create{% endif %}" method="post">
