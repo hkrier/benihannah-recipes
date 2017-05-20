@@ -30,7 +30,7 @@ $app->register(new Herrera\Pdo\PdoServiceProvider(),
 // Our web handlers
 
 $app->get('/', function () use ($app) {
-    $sql = "SELECT * FROM recipes";
+    $sql = "SELECT * FROM recipes WHERE deleted_at IS NULL";
     $st = $app['pdo']->prepare($sql);
     $st->execute();
 
@@ -65,7 +65,7 @@ $app->get('/view/{id}', function ($id) use ($app) {
 });
 
 $app->get('/edit/{id}', function ($id) use ($app) {
-    $sql = "SELECT * FROM recipes WHERE id = ?";
+    $sql = "SELECT * FROM recipes WHERE id = ? AND deleted_at IS NULL";
     $st = $app['pdo']->prepare($sql);
     $st->execute([$id]);
 
@@ -143,7 +143,7 @@ $app->get('/delete-landing/{id}', function ($id) use ($app) {
 });
 
 $app->get('/delete/{id}', function ($id) use ($app) {
-    $sql = "DELETE FROM recipes WHERE id = ?";
+    $sql = "UPDATE recipes SET (deleted_at) = (clock_timestamp()) WHERE id = ?";
     $st = $app['pdo']->prepare($sql);
     $st->execute([$id]);
 
