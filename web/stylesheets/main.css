@@ -332,3 +332,8 @@ and (max-device-width: 667px) {
     display: none;  
   }
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
