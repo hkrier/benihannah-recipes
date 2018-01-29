@@ -98,18 +98,16 @@ $app->post('/create', function (Request $request) use ($app) {
     ];
 
     $st = $app['pdo']->prepare($sql);
-    $st->execute($variables);
 
-    // This is returning a really high number... why? shared db?
-    // $id = $app['pdo']->lastInsertId();
+    if ($st->execute($variables)) {
+        // Redirect on success
+        $sql = "SELECT MAX(id) FROM recipes";
+        $st = $app['pdo']->prepare($sql);
+        $st->execute();
+        $id = $st->fetch(PDO::FETCH_NUM);
 
-    // Hate to have to do it this way...
-    $sql = "SELECT MAX(id) FROM recipes";
-    $st = $app['pdo']->prepare($sql);
-    $st->execute();
-    $id = $st->fetch(PDO::FETCH_NUM);
-
-    return $app->redirect('/view/' . $id[0]);
+        return $app->redirect('/view/' . $id[0]);
+    }
 });
 
 $app->post('/update', function (Request $request) use ($app) {
