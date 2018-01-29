@@ -3,6 +3,7 @@
 require('../vendor/autoload.php');
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -108,6 +109,8 @@ $app->post('/create', function (Request $request) use ($app) {
 
         return $app->redirect('/view/' . $id[0]);
     }
+
+    return new Response('Your recipe did not save. Please go back and ensure that all fields are filled in. Thank you, and you look great today!');
 });
 
 $app->post('/update', function (Request $request) use ($app) {
