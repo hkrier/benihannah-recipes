@@ -16,7 +16,7 @@
         <input type="text" name="image_url" placeholder="Image URL" {% if recipe %}value="{{ recipe.image_url }}"{% endif %}  />
         <textarea type="textarea" name="ingredients" placeholder="Ingredients" rows="10">{{ recipe.ingredients | default('') }}</textarea>
         <textarea type="textarea" name="directions" placeholder="Directions" rows="10">{{ recipe.directions | default('') }}</textarea>
-        <input type="text" name="date" placeholder="Date Eaten ({{ "now"|date('m/d/y') }})" {% if recipe %}value="{{ recipe.date|date('m/d/y') }}"{% endif %}  />
+        <input type="text" name="date" value="{% if recipe %}{{ recipe.date|date('m/d/y') }}{% else %}{{ "now"|date('m/d/y', 'America/Los_Angeles') }}{% endif %}" />
 
         <br><br>
 
